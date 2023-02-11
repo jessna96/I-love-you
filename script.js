@@ -62,11 +62,11 @@ function fadeText(counter = 0) {
         }
         else {
             setTimeout(() => {
-                $(".p_" + textClass).fadeOut(800);
+                $(".p_" + textClass).fadeOut(1000);
                 setTimeout(() => {
                     fadeText(++counter);
-                }, 1000)
-            }, 500)
+                }, 1200)
+            }, 1000)
         }
     });
 }
