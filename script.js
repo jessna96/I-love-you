@@ -66,7 +66,7 @@ function fadeText(counter = 0) {
                 setTimeout(() => {
                     fadeText(++counter);
                 }, 1000)
-            }, 1050)
+            }, 500)
         }
     });
 }
