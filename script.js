@@ -65,7 +65,7 @@ function fadeText(counter = 0) {
                 $(".p_" + textClass).fadeOut(1000);
                 setTimeout(() => {
                     fadeText(++counter);
-                }, 1500)
+                }, 200)
             }, 1200)
         }
     });
