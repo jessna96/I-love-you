@@ -25,6 +25,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.lovetext { 
     font-size: 18vw;
 }
 

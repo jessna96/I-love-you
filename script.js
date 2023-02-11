@@ -38,7 +38,7 @@ const render = () => {
         document.querySelector(`.content_container_${index}`).innerHTML += text_html;
     });
 
-    document.querySelector('.content_container').innerHTML += `<div class="last"  style="display: none"><div class="love"><p>I love you</p><br/><img class="heartImg" src="assets/heart_white.png" alt="Heart <3" width="100hv" height="100hv"></div></div>`;
+    document.querySelector('.content_container').innerHTML += `<div class="last"  style="display: none"><div class="love"><p class="lovetext">I love you</p><br/><img class="heartImg" src="assets/heart_white.png" alt="Heart <3" width="100hv" height="100hv"></div></div>`;
 
     fadeText();
 }
