@@ -29,6 +29,11 @@ const render = () => {
 
 }
 
+// function playMusic() {
+//     const audio = new Audio('assets/Calum_Scott_-_You_Are_The_Reason.mp3');
+//     audio.play();
+// }
+
 render();
 
 fadeText();
@@ -44,18 +49,18 @@ function fadeText(counter = 0) {
     $.when(effect()).done(function () {
         if (counter === textArr.length - 1) {
             $(".p_" + textClass).fadeOut(500);
-                setTimeout(() => {
-                    $(".last").fadeIn(2000);
-                }, 1500)
-            
+            setTimeout(() => {
+                $(".last").fadeIn(2000);
+            }, 1500)
+
         }
         else {
             setTimeout(() => {
-                $(".p_" + textClass).fadeOut(500);
+                $(".p_" + textClass).fadeOut(1000);
                 setTimeout(() => {
                     fadeText(++counter);
                 }, 1500)
-            }, 1000)
+            }, 1200)
         }
     });
 }
