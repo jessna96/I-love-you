@@ -19,7 +19,7 @@ function start() {
     };
     setTimeout(() => {
         render();
-    }, 500)
+    }, 1000)
 }
 
 const render = () => {
