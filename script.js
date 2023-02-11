@@ -11,7 +11,18 @@ const textArr = [
     "I just wanted to let you know..."
 ]
 
+function start() {
+    const audio = document.getElementById("music");
+    audio.load();
+    audio.oncanplaythrough = function() {
+        // alert("Can play through video without stopping");
+    };
+    render();
+}
+
 const render = () => {
+
+    document.querySelector('.content_container').innerHTML = '';
 
     textArr.forEach((text, index) => {
         document.querySelector('.content_container').innerHTML += `<div class="content_container_${index}">
@@ -27,6 +38,7 @@ const render = () => {
 
     document.querySelector('.content_container').innerHTML += `<div class="last"  style="display: none"><div class="love"><p>I love you</p><br/><img class="heartImg" src="assets/heart_white.png" alt="Heart <3" width="100hv" height="100hv"></div></div>`;
 
+    fadeText();
 }
 
 // function playMusic() {
@@ -34,9 +46,9 @@ const render = () => {
 //     audio.play();
 // }
 
-render();
+// render();
 
-fadeText();
+
 
 function fadeText(counter = 0) {
     if (counter === textArr.length) {

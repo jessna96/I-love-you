@@ -9,10 +9,12 @@
 </head>
 
 <body>
-    <audio autoplay>
+    <audio id="music" autoplay>
         <source src="assets/Calum_Scott_-_You_Are_The_Reason.mp3" type="audio/mp3">
     </audio>
-    <div class="content_container"></div>
+    <div class="content_container">
+        <p ontouchend="start()" onclick="start()">Touch me</p>
+    </div>
 </body>
 
 </html>
