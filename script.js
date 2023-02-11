@@ -15,9 +15,11 @@ function start() {
     const audio = document.getElementById("music");
     audio.load();
     audio.oncanplaythrough = function() {
-        // alert("Can play through video without stopping");
+
     };
-    render();
+    setTimeout(() => {
+        render();
+    }, 500)
 }
 
 const render = () => {
@@ -40,14 +42,6 @@ const render = () => {
 
     fadeText();
 }
-
-// function playMusic() {
-//     const audio = new Audio('assets/Calum_Scott_-_You_Are_The_Reason.mp3');
-//     audio.play();
-// }
-
-// render();
-
 
 
 function fadeText(counter = 0) {
